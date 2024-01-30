@@ -1,4 +1,8 @@
 # autocommit
+
+[![npm version](https://badge.fury.io/js/@dobuki%2Fautocommit.svg)](https://www.npmjs.com/package/@dobuki/autocommit)
+
+
 Bash script hooked up with npm for auto-committing changes into git. Just run one command, and all changes are committed immediately.
 
 It comes up with a default non-descriptive message, so other devs get confused when they see your commit message with no context whatsoever.
@@ -18,7 +22,7 @@ $ npm run autocommit
 
 # Run from npm dependency
 
-First import dependency in your `package.json`
+First import dependency in your `package.json`:
 
 ```json
   "devDependencies": {
