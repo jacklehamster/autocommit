@@ -2,6 +2,7 @@
 
 # Add all changes to the staging area
 git add .
+echo "Debug: Files added to the staging area."
 
 # Get the list of files about to be committed
 files=$(git status --porcelain | awk '{print $2}')
