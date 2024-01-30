@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/@dobuki%2Fautocommit.svg)](https://www.npmjs.com/package/@dobuki/autocommit)
 
+![](https://jacklehamster.github.io/autocommit/icon.png)
 
 Bash script hooked up with npm for auto-committing changes into git. Just run one command, and all changes are committed immediately.
 
