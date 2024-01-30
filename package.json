@@ -1,5 +1,5 @@
 {
-  "name": "autocommit",
+  "name": "@dobuki/autocommit",
   "version": "1.0.1",
   "engines": {
     "node": ">=14.0.0"

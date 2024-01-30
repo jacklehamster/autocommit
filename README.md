@@ -26,7 +26,7 @@ First import dependency in your `package.json`
 
 ```json
   "devDependencies": {
-    "autocommit": "^1.0.0"
+    "@dobuki/autocommit": "^1.0.0"
   }
 ```
 
@@ -35,7 +35,7 @@ Then add a script to execute it:
 ```json
   "scripts": {
     "tsc": "tsc",
-    "autocommit": "bun run autocommit:autocommit",
-    "autocommit-using-slowass-npm": "npm run autocommit:autocommit"
+    "autocommit": "bun run @dobuki/autocommit:autocommit",
+    "autocommit-using-slowass-npm": "npm run @dobuki/autocommit:autocommit"
   }
 ```
