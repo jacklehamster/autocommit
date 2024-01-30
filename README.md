@@ -26,7 +26,7 @@ First import dependency in your `package.json`
 
 ```json
   "devDependencies": {
-    "@dobuki/autocommit": "^1.0.0"
+    "@dobuki/autocommit": "^1.0.3"
   }
 ```
 
