@@ -1,6 +1,17 @@
 {
   "name": "@dobuki/autocommit",
   "version": "1.0.2",
+  "keywords": [
+    "bun",
+    "bunjs",
+    "typescript",
+    "git",
+    "commit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacklehamster/autocommit.git"
+  },
   "engines": {
     "node": ">=14.0.0"
   },
