@@ -13,11 +13,7 @@ $ ./autocommit.sh     # This commits all your code.
 
 or
 
-$ npm run autocommit      # This also commits all your code, and can be run from npm
-
-or
-
-$ bun run autocommit      # I'm sure in the future, nobody will use slowass npm anymore and everyone will be using bun!
+$ npm run autocommit
 ```
 
 # Run from npm dependency
@@ -35,7 +31,6 @@ Then add a script to execute it:
 ```json
   "scripts": {
     "tsc": "tsc",
-    "autocommit": "bun run @dobuki/autocommit:autocommit",
-    "autocommit-using-slowass-npm": "npm run @dobuki/autocommit:autocommit"
+    "autocommit": "npm explore @dobuki/autocommit -- npm run autocommit \"$(pwd)\"",
   }
 ```

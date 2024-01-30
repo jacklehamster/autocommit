@@ -16,7 +16,7 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "autocommit": "./autocommit.sh",
+    "autocommit": "./autocommit.sh $npm_config_param",
     "test": "echo 'No test'"
   }
 }
