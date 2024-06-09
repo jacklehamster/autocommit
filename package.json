@@ -18,7 +18,7 @@
   },
   "bin": "./execute",
   "scripts": {
-    "autocommit": "./autocommit.sh $npm_config_param",
+    "autocommit": "npx @dobuki/autocommit",
     "test": "echo 'No test'"
   },
   "dependencies": {

@@ -18,7 +18,7 @@ export async function generateComments(
   const allMessages = [
     {
       "role": "system",
-      "content": `Generate git comments based on the git diff provided. The first line should be a general summary, then list each changes identified line by line.`,
+      "content": `Generate git comments based on the git diff provided. Write in a human readable way that's easy to understand. The first line should be a general summary, then list each changes identified line by line.`,
     },
     {
       "role": "user",

@@ -49,10 +49,12 @@ export async function autoCommit() {
               resolve(path);
             }));
           const fileList = data.results[data.results.length-1];
-          fs.writeFileSync(path, `${data.comments}\nCommitted using auto-commit: ${new Date().toString()}
+          fs.writeFileSync(path, `${data.comments}
   
               Files:
               ${fileList}
+
+              Committed using auto-commit: ${new Date().toString()}
               Autocommit project: https://www.npmjs.com/package/@dobuki/autocommit
           `.split("\n").map(a => a.trim()).join("\n"));
           data.path = path;
