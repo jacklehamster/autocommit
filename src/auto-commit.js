@@ -37,7 +37,7 @@ export async function autoCommit() {
 
   const COMMANDS = [
       `git add .`,
-      `git diff --staged`,
+      `git diff HEAD -- . $(git diff --numstat --staged | awk -v threshold=10 '($1 != "-" && $2 != "-" && ($1 + $2) > threshold) {print ":^"$3}' | paste -sd " " -)`,
       async (data) => {
         const diff = data.results[data.results.length-1];
         const comments = await generateComments(diff);
