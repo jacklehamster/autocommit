@@ -3,6 +3,8 @@ import tmp from "tmp"
 import fs from "fs"
 import { generateComments } from './open-ai.js';
 
+tmp.setGracefulCleanup();
+
 /**
  * @param {string[]} commands
  */
@@ -32,7 +34,6 @@ async function executeCommands(commands) {
 }
 
 export async function autoCommit() {
-  tmp.setGracefulCleanup();
 
   const COMMANDS = [
       `git add .`,
