@@ -22,6 +22,7 @@
     "test": "echo 'No test'"
   },
   "dependencies": {
+    "openai": "^4.49.1",
     "tmp": "^0.2.3"
   }
 }
