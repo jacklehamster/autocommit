@@ -1,6 +1,7 @@
 {
   "name": "@dobuki/autocommit",
   "version": "1.0.11",
+  "type": "module",
   "keywords": [
     "bun",
     "bunjs",
@@ -15,8 +16,12 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "bin": "./execute",
   "scripts": {
     "autocommit": "./autocommit.sh $npm_config_param",
     "test": "echo 'No test'"
+  },
+  "dependencies": {
+    "tmp": "^0.2.3"
   }
 }
