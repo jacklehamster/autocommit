@@ -1,4 +1,5 @@
 import OpenAI from "openai";
+import { systemPrompt } from "./system-prompt.js";
 
 const openai = process.env.OPENAI_API_KEY?.length ? new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -18,7 +19,7 @@ export async function generateComments(
   const allMessages = [
     {
       "role": "system",
-      "content": `Generate git comments based on the git diff provided. Write in a human readable way that's easy to understand. The first line should be a general summary, then list each changes identified line by line.`,
+      "content": systemPrompt,
     },
     {
       "role": "user",
