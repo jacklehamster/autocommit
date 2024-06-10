@@ -19,7 +19,7 @@
   "bin": "./execute",
   "scripts": {
     "autocommit": "npx @dobuki/autocommit",
-    "test": "echo 'No test'"
+    "test": "bun test"
   },
   "dependencies": {
     "openai": "^4.49.1",

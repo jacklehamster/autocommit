@@ -1,6 +1,6 @@
 # autocommit
 
-[![npm version](https://badge.fury.io/js/@dobuki%2Fautocommit.svg)](https://www.npmjs.com/package/@dobuki/autocommit)
+[![npm version](https://badge.fury.io/js/@dobuki%2Fautocommit.svg)](https://www.npmjs.com/package/@dobuki/autocommit) [![Version](https://img.shields.io/github/v/release/jacklehamster/autocommit)](https://github.com/jacklehamster/autocommit) [![License](https://img.shields.io/github/license/jacklehamster/autocommit)](https://github.com/jacklehamster/autocommit)
 
 ![icon](https://jacklehamster.github.io/autocommit/icon.png)
 
