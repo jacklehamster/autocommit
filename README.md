@@ -2,40 +2,33 @@
 
 [![npm version](https://badge.fury.io/js/@dobuki%2Fautocommit.svg)](https://www.npmjs.com/package/@dobuki/autocommit)
 
-![](https://jacklehamster.github.io/autocommit/icon.png)
+![icon](https://jacklehamster.github.io/autocommit/icon.png)
 
-Bash script hooked up with npm for auto-committing changes into git. Just run one command, and all changes are committed immediately.
+## description
 
-It comes up with a default non-descriptive message, so other devs get confused when they see your commit message with no context whatsoever.
+This is the ultimate command for lazy developers who can't be bothered writing a description of their commits.
 
-Using autocommit in your project shows others that you're an 10x developer, who doesn't even bother wasting time manually committing your own code.
+## usage
 
-# usage
+First, set an environment variable for your OpenAI key in your `~/.bash_profile` or `~/.zprofile`:
 
 ```bash
-execute:
-$ ./autocommit.sh     # This commits all your code.
-
-or
-
-$ npm run autocommit
+export OPENAI_API_KEY=sk-?????????
 ```
 
-# Run from npm dependency
+Then execute the NPX command:
 
-First import dependency in your `package.json`:
-
-```json
-  "devDependencies": {
-    "@dobuki/autocommit": "^1.0.3"
-  }
+```bash
+# execute:
+$ npx @dobuki/autocommit
 ```
 
-Then add a script to execute it:
+Note: If you don't have an OpenAI key, it will just skip the descriptive comment and write something simple like:
 
-```json
-  "scripts": {
-    "tsc": "tsc",
-    "autocommit": "npm explore @dobuki/autocommit -- npm run autocommit \"$(pwd)\"",
-  }
+```text
+Files:
+M src/auto-commit.js
+
+Committed using auto-commit: Sun Jun 09 2024 01:00:35 GMT-0700 (Pacific Daylight Time)
+Autocommit project: https://www.npmjs.com/package/@dobuki/autocommit
 ```
