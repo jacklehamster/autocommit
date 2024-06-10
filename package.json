@@ -3,11 +3,14 @@
   "version": "1.0.18",
   "type": "module",
   "keywords": [
-    "bun",
-    "bunjs",
-    "typescript",
     "git",
-    "commit"
+    "commit",
+    "commit-message",
+    "openai",
+    "ai",
+    "comment",
+    "lazy-developer",
+    "git"
   ],
   "repository": {
     "type": "git",
