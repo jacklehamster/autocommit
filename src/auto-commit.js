@@ -14,7 +14,9 @@ async function executeCommands(commands) {
   for (let command of commands) {
       if (typeof(command) === "string") {
           const result = await new Promise((resolve, reject) => {
-              exec(command, (err, stdout, stderr) => {
+              exec(command, {
+                maxBuffer: 5 * 1024 * 1024,
+              }, (err, stdout, stderr) => {
                   if(err != null) {
                       reject(err);
                   } else if(typeof(stderr) != "string") {
