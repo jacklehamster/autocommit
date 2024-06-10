@@ -2,8 +2,8 @@ import OpenAI from "openai";
 
 const openai = process.env.OPENAI_API_KEY?.length ? new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  organization: 'org-uktBsveUaXeMNXTgnjk5JlBA',
-  project: 'proj_uu8vcMnZuKCi5ppPZwej7YCD', //  ai-commit
+  organization: process.env.OPENAI_ORGANIZATION,
+  project: process.env.OPENAI_PROJECT_AI_COMMIT, //  ai-commit
 }) : undefined;
 
 /**
