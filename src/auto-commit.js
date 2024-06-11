@@ -39,7 +39,7 @@ export async function autoCommit() {
 
   const COMMANDS = [
       `git add .`,
-      `git diff HEAD -- . | awk '{ if (length($0) > 200) print substr($0, 1, 197) "..."; else print $0 }'`,
+      `git diff --numstat --staged | awk '$1 < 100 && $2 < 100 {print $3}' | xargs git diff HEAD -- | awk '{ if (length($0) > 200) print substr($0, 1, 197) "..."; else print $0 }'`,
       async (data) => {
         const diff = data.results[data.results.length-1];
         console.log("DIFF used:", diff);
