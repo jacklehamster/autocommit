@@ -19,13 +19,14 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "bin": "./execute",
+  "bin": "NODE_NO_WARNINGS=1 ./execute",
   "scripts": {
-    "autocommit": "NODE_NO_WARNINGS=1 npx @dobuki/autocommit",
+    "autocommit": "npx @dobuki/autocommit",
     "test": "bun test"
   },
   "dependencies": {
-    "openai": "^4.51.0"
+    "openai": "^4.51.0",
+    "tmp": "^0.2.3"
   },
   "devDependencies": {
     "@types/tmp": "^0.2.6"
