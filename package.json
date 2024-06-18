@@ -1,6 +1,6 @@
 {
   "name": "@dobuki/autocommit",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "type": "module",
   "keywords": [
     "git",
