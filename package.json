@@ -21,7 +21,7 @@
   },
   "bin": "./execute",
   "scripts": {
-    "autocommit": "npx @dobuki/autocommit",
+    "autocommit": "NODE_NO_WARNINGS=1 npx @dobuki/autocommit",
     "test": "bun test"
   },
   "dependencies": {
