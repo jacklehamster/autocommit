@@ -12,7 +12,7 @@ const openai = process.env.OPENAI_COMMIT_KEY?.length
 /**
  * @param {string} diff
  */
-export async function generateComments(diff, model = "gpt-3.5-turbo-1106") {
+export async function generateComments(diff, model = "gpt-4o-mini") {
   if (!openai) {
     return "";
   }
